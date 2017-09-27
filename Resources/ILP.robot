@@ -2,7 +2,7 @@
 Library  Selenium2Library
 
 *** Variables ***
-${START_URL} =  http://192.168.0.14:39900/ilp/
+${START_URL} =  http://192.168.0.14:39920/ilp/
 ${SEARCH_TERM} =  eventcourse
 ${USER_NAME} =  eventtester
 ${PASSWORD} =  eventtester
@@ -26,7 +26,7 @@ Log in to ILP
 
 Log out from ILP
     Page should contain element  id=NL_PERSONAL_DASHBOARD
-    click element  xpath=//a[@id='NL_USERMENU']/span[3]
+    Click element  xpath=//a[@id='NL_USERMENU']/span[3]
     Sleep  5s
     Click element  id=NL_LOGOUT
     Sleep  10s

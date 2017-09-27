@@ -45,7 +45,7 @@ Request new password
     Input Text  id=resetform:PasswordRequestLogin  doesnotmattername
     Click Element  id=resetform:PasswordRequestButton
     Sleep  10s
-    Page should contain  We have sent you an email with instructions on how to reset your password.
+    Page should contain element  xpath=//section[@id='password-request-section']/div/div
 
 Login with IDP
     [Tags]  Smoke
