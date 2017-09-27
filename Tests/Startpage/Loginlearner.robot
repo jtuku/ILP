@@ -83,6 +83,6 @@ Sign up user
     Input Text  id=signUpform:PASSWORD_CONFIRMATION  newuser@newuser.de
     Click Element  id=signUpform:acceptTerms
     Click Element  id=signUpform:signupbutton
-    Sleep 20s
+    Sleep  20s
     Log out from ILP
 
