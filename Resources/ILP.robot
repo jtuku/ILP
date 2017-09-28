@@ -10,13 +10,13 @@ ${PASSWORD} =  eventtester
 *** Keywords ***
 Open ILP
     Go To  ${START_URL}
-    Sleep  5s
+    Sleep  10s
     Page should contain element  id=externalForm:login
 
 
 Log in to ILP
     Go To  ${START_URL}
-    Sleep  5s
+    Sleep  10s
     Input Text  id=externalForm:login  ${USER_NAME}
     Input Text  id=externalForm:password  ${PASSWORD}
     Sleep  5s
