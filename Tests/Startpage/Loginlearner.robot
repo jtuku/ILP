@@ -3,49 +3,12 @@ Library  Selenium2Library
 Resource  ../../Resources/Common.robot
 Resource  ../../Resources/ILP.robot
 Test Setup  Begin Web Test
-Test Teardown  End Web Test
+Test Teardown  Logout and end web test
 
 *** Test Cases ***
 Log in and log out from ILP as learner
     [Tags]  Smoke
     Log in to ILP
-    Log out from ILP
-
-Password forgotten
-    [Tags]  Smoke
-    Open ILP
-    Input Text  id=externalForm:login   ${USER_NAME}
-    Input Text  id=externalForm:password  totallywrong
-    Sleep  5s
-    Click Element  id=externalForm:loginButton
-    Sleep  20s
-    Page should contain element  id=server-error
-    Input Text  id=loginform:login  totallywrong
-    Input Text  id=loginform:password  ${PASSWORD}
-    Sleep  5s
-    Click Element  id=loginform:loginButton
-    Sleep  20s
-    Page should contain element  id=server-error
-
-Request new password
-    [Tags]  Smoke
-    Open ILP
-    Input Text  id=externalForm:login   ${USER_NAME}
-    Input Text  id=externalForm:password  totallywrong
-    Sleep  5s
-    Click Element  id=externalForm:loginButton
-    Sleep  20s
-    Page should contain element  id=server-error
-    Click Element  xpath=//form[@id='loginform']/a
-    Sleep  10s
-    Page should contain element  id=resetform:PasswordRequestLogin
-    Click Element  id=resetform:PasswordRequestButton
-    Sleep  5s
-    Page should contain element  xpath=//form[@id='resetform']/fieldset/label
-    Input Text  id=resetform:PasswordRequestLogin  doesnotmattername
-    Click Element  id=resetform:PasswordRequestButton
-    Sleep  10s
-    Page should contain element  xpath=//section[@id='password-request-section']/div/div
 
 Login with IDP
     [Tags]  Smoke
@@ -65,7 +28,6 @@ Login with IDP
     Input Text  id=loginBoxInputfieldTagPassword  ${PASSWORD}
     Click Element  id=loginButton
     Sleep  20s
-    Log out from ILP
 
 Sign up user
     [Tags]  Smoke
@@ -84,5 +46,4 @@ Sign up user
     Click Element  id=signUpform:acceptTerms
     Click Element  id=signUpform:signupbutton
     Sleep  20s
-    Log out from ILP
 
