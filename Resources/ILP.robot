@@ -30,3 +30,16 @@ Log out from ILP
     Sleep  5s
     Click element  id=NL_LOGOUT
     Sleep  10s
+
+Open all catalogues
+    page should contain element  id=NL_TERMSOFSERVICE
+    click element  id=NL_CATALOGUE_DROPDOWN
+    Sleep  5s
+    click element  id=NL_CATALOG_SEARCH_0
+    Sleep  10s
+    Page should contain element  id=searchField
+
+Set language to ENGB
+    page should contain element  id=NL_TERMSOFSERVICE
+    click element  xpath=//ul[@id='lang-selection']/li[3]/a
+    Sleep  10s
