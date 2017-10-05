@@ -3,7 +3,8 @@ Library  Selenium2Library
 Resource  ../../Resources/Common.robot
 Resource  ../../Resources/ILP.robot
 Test Setup  Begin Web Test
-Test Teardown  End Web Test
+Test Teardown  Logout and end web test
+
 
 *** Test Cases ***
 Search catalogue
