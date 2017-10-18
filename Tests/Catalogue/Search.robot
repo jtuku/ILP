@@ -19,6 +19,7 @@ Hiding Filter
     [Tags]  Smoke
     Open ILP
     Open all catalogues
+    Set language to ENGB
     page should contain element  xpath=//div[@id='filterBtnWrapper']/button[2]
     page should contain  JT skill
     click element  xpath=//div[@id='filterBtnWrapper']/button[2]

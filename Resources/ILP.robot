@@ -2,7 +2,7 @@
 Library  Selenium2Library
 
 *** Variables ***
-${START_URL} =  http://192.168.0.14:39920/ilp/
+${START_URL} =  http://192.168.0.14:39900/ilp/
 ${SEARCH_TERM} =  eventcourse
 ${USER_NAME} =  eventtester
 ${PASSWORD} =  eventtester
@@ -10,7 +10,7 @@ ${PASSWORD} =  eventtester
 *** Keywords ***
 Open ILP
     Go To  ${START_URL}
-    Sleep  10s
+    Sleep  15s
     Page should contain element  id=externalForm:login
 
 

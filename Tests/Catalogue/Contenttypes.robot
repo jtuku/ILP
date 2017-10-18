@@ -16,7 +16,7 @@ Enrol to course
     Sleep  5s
     page should contain  selenium_course1
     click element  xpath=//one-column-list-item[@id='one-column-list-layout-item-cs_result_item_489035']/div/div/div/div[1]
-    Sleep  5s
+    Sleep  10s
     page should contain element  id=skills_709032
     page should contain element  id=course-register-button
     page should contain element  id=course-book-staff-button
@@ -40,7 +40,7 @@ Enrol to programme
     page should contain  skills
     click element  xpath=//div[@id='course-description-main']/div[2]/a
     sleep  7s
-    page should contain  open details
+    page should contain  Open details
     page should contain element  xpath=//one-column-list-item[@id='one-column-list-layout-item-187391']/div/div/div/div[1]
 
 Open WBT

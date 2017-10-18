@@ -2,7 +2,7 @@
 Library  Selenium2Library
 
 *** Variables ***
-${BROWSER} =  ie
+${BROWSER} =  firefox
 
 *** Keywords ***
 Begin Web Test

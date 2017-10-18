@@ -10,7 +10,7 @@ Enroll course only recommended
     [Tags]  Smoke
     Log in to ILP
     Go to  ${START_URL}pages/coursedescription.jsf?courseId=691659&catalogId=664465
-    sleep  5s
+    sleep  10s
     page should contain element  id=course-register-button
     click element  id=course-register-button
     sleep  7s
@@ -27,7 +27,7 @@ Enroll course required not fulfilled
     [Tags]  Smoke
     Log in to ILP
     Go to  ${START_URL}pages/coursedescription.jsf?courseId=691693&catalogId=664465
-    sleep  5s
+    sleep  10s
     page should contain element  id=course-register-button
     click element  id=course-register-button
     sleep  7s

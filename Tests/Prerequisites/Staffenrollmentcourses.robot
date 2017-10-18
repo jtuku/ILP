@@ -10,7 +10,7 @@ Enroll staff to course only recommended
     [Tags]  Smoke
     Log in to ILP
     Go to  ${START_URL}pages/coursedescription.jsf?courseId=691659&catalogId=664465
-    sleep  5s
+    sleep  10s
     page should contain element  id=course-book-staff-button
     click element  id=course-book-staff-button
     sleep  7s
@@ -31,7 +31,7 @@ Enroll staff to course only recommended
 Enroll staff to course required not met
     Log in to ILP
     Go to  ${START_URL}pages/coursedescription.jsf?courseId=691693&catalogId=664465
-    sleep  5s
+    sleep  10s
     page should contain element  id=course-book-staff-button
     click element  id=course-book-staff-button
     sleep  7s
