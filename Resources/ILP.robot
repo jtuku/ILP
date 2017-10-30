@@ -2,7 +2,7 @@
 Library  Selenium2Library
 
 *** Variables ***
-${START_URL} =  http://192.168.0.14:39900/ilp/
+${START_URL} =  http://192.168.0.14:39020/ilp/
 ${SEARCH_TERM} =  eventcourse
 ${USER_NAME} =  eventtester
 ${PASSWORD} =  eventtester
