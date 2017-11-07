@@ -6,7 +6,7 @@ Test Setup  Begin Web Test
 Test Teardown  Logout and end web test
 
 *** Test Cases ***
-Enrolment course with notification
+#Enrolment course with confirmation
     [Tags]  Smoke
     Log in to ILP
     Open all catalogues
@@ -25,3 +25,16 @@ Enrolment course with notification
     Go to  ${START_URL}pages/personalarea.jsf#!/mylearnings/pending
     Sleep  7s
     page should contain  SelfregistrationWithConfirmation1
+
+Enrolment programme with confirmation
+    [Tags]  Smoke
+    Log in to ILP
+    Open all catalogues
+    Set language to ENGB
+    Sleep  7s
+    Go to  ${START_URL}pages/programmes.jsf#!/360294/115293
+    Sleep  7s
+    page should contain element  xpath=//div[@id='course-description-main']/div[2]/a
+    click element  xpath=//div[@id='course-description-main']/div[2]/a
+    Sleep  7s
+    page should contain  DECS facilitator programme 1
